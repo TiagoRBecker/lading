@@ -85,7 +85,7 @@ export default function Home() {
             <div className="flex gap-3 items-center">
               {icons.map((url, index) => (
                 <img
-                key={index}
+                  key={index}
                   src={url}
                   alt={url}
                   className="rounded-full w-14 h-14 object-fill"
@@ -106,14 +106,18 @@ export default function Home() {
               </p>
             </div>
             <div className="mt-40">
-              <h1 className="font-bold text-white text-lg">Dra. Deusa Guedes</h1>
+              <h1 className="font-bold text-white text-lg">
+                Dra. Deusa Guedes
+              </h1>
               <p className="text-white font-light pb-8">
                 Direito médico, empresarial e da saúde, atua na defesa de
                 clínicas e centros de estética
               </p>
             </div>
             <div className="">
-              <h1 className="font-bold text-white text-lg">Dr. Alexandre Bampi</h1>
+              <h1 className="font-bold text-white text-lg">
+                Dr. Alexandre Bampi
+              </h1>
               <p className="text-white font-light pb-8">
                 Direito empresarial da saúde e contratual, Advogado,
                 Administrador, Mestre e Professor de pós-graduação
@@ -302,8 +306,6 @@ export default function Home() {
         </div>
       </section>
 
-
-
       <section className="w-full h-full">
         <div className="w-full h-full  bgCustom mx-auto py-10 flex gap-3">
           <div className="w-[33%]  flex items-center justify-center px-4">
@@ -317,10 +319,10 @@ export default function Home() {
             </h1>
 
             <ul className="list-disc text-white py-2">
-              <li className="ml-4">Toxina</li>
-              <li className="ml-4">Botulínica</li>
-              <li className="ml-4">Acido</li>
-              <li className="ml-4">Hialurônico</li>
+              <li className="ml-4">Toxina Botulínica</li>
+
+              <li className="ml-4">Acido Hialurônico</li>
+
               <li className="ml-4">Endolaser</li>
               <li className="ml-4">Bioestimulador de Colágeno</li>
               <li className="ml-4">Skinbooster</li>
@@ -429,8 +431,8 @@ export default function Home() {
           seu Crescimento na Harmonização
         </h1>
         <div className="max-w-[1240px] h-full mx-auto grid grid-cols-3">
-       <div className="flex items-center justify-center">
-       <Link
+          <div className="flex items-center justify-center">
+            <Link
               href={"https://www.documentosparaharmonizacao.com.br/"}
               target="_blank"
             >
@@ -439,41 +441,52 @@ export default function Home() {
                 <img src="/cart.svg" className="w-10 h-10 object-fill" />
               </button>
             </Link>
-       </div>
-       <div className="w-full h-full">
-       <img
-                src="/logo_med.png"
-                alt="Logo"
-                className="w-full h-full object-fill"
-              />
-       </div>
-       <div className="flex items-center justify-center">
-       <Link
+          </div>
+          <div className="w-full h-full">
+            <img
+              src="/logo_med.png"
+              alt="Logo"
+              className="w-full h-full object-fill"
+            />
+          </div>
+          <div className="flex items-center justify-center">
+            <Link
               href={"https://www.documentosparaharmonizacao.com.br/"}
               target="_blank"
             >
-               <button className="bg-[#00003e] w-[310px] py-5 rounded-full text-white flex items-center gap-3 justify-center transition ease-in-out delay-150 hover:bg-blue-800">
-              CONSULTE PELO WHATSAPP
-              <img src="/w.svg" className="w-10 h-10 object-fill" />
-            </button>
+              <button className="bg-[#00003e] w-[310px] py-5 rounded-full text-white flex items-center gap-3 justify-center transition ease-in-out delay-150 hover:bg-blue-800">
+                CONSULTE PELO WHATSAPP
+                <img src="/w.svg" className="w-10 h-10 object-fill" />
+              </button>
             </Link>
-       </div>
+          </div>
         </div>
       </section>
       <section className="w-full flex items-center justify-center gap-3 py-4 bgCustom">
         <div className="flex items-center gap-2 text-white">
-        <img src="/fb.png" alt="Fb" className="w-10 h-10 object-fill rounded-full"/>
-        <p>Facebook</p>
+          <img
+            src="/fb.png"
+            alt="Fb"
+            className="w-10 h-10 object-fill rounded-full"
+          />
+          <p>Facebook</p>
         </div>
         <div className="flex items-center gap-2 text-white">
-        <img src="/inst.png" alt="Fb" className="w-10 h-10 object-fill rounded-full"/>
-        <p>Instagram</p>
+          <img
+            src="/inst.png"
+            alt="Fb"
+            className="w-10 h-10 object-fill rounded-full"
+          />
+          <p>Instagram</p>
         </div>
         <div className="flex items-center gap-2 text-white">
-        <img src="/yt.png" alt="Fb" className="w-10 h-10 object-fill rounded-full"/>
-        <p>Youtube</p>
+          <img
+            src="/yt.png"
+            alt="Fb"
+            className="w-10 h-10 object-fill rounded-full"
+          />
+          <p>Youtube</p>
         </div>
-        
       </section>
     </main>
   );
