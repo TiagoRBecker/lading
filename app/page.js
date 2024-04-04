@@ -79,8 +79,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full min-h-screen bg-[url('/banner_1.png')] bg-cover bg-center bg-no-repeat ">
-        <div className="max-w-[1240px]  grid grid-cols-2 gap-4 mx-auto">
+      <section className="w-full min-h-screen bgCustom bg-cover bg-center bg-no-repeat ">
+        <div className="max-w-[1240px]  grid grid-cols-2 gap-4 mx-auto py-4">
           <div className="w-full py-4">
             <div className="flex gap-3 items-center">
               {icons.map((url, index) => (
@@ -93,10 +93,10 @@ export default function Home() {
               ))}
             </div>
             <div className="py-10 px-2">
-              <h1 className="text-[1.8rem] font-bold text-[#00003e]">
+              <h1 className="text-[1.8rem] font-bold text-white">
                 EQUIPE AUTORA
               </h1>
-              <p className="py-8 text-[#305d8e] font-medium text-lg">
+              <p className="py-8 text-white  text-lg">
                 Somos uma equipe multidisciplinar formada por juristas e
                 profissionais da harmonização de diversas áreas. Protegemos a
                 prática e a reputação dos profissionais da área através de
@@ -106,15 +106,15 @@ export default function Home() {
               </p>
             </div>
             <div className="mt-40">
-              <h1 className=" font-bold text-[#00003e]">Dra. Deusa Guedes</h1>
-              <p className="text-[#305d8e] font-medium pb-8">
+              <h1 className="font-bold text-white text-lg">Dra. Deusa Guedes</h1>
+              <p className="text-white font-light pb-8">
                 Direito médico, empresarial e da saúde, atua na defesa de
                 clínicas e centros de estética
               </p>
             </div>
             <div className="">
-              <h1 className="font-bold text-[#00003e]">Dr. Alexandre Bampi</h1>
-              <p className="text-[#305d8e] font-medium pb-8">
+              <h1 className="font-bold text-white text-lg">Dr. Alexandre Bampi</h1>
+              <p className="text-white font-light pb-8">
                 Direito empresarial da saúde e contratual, Advogado,
                 Administrador, Mestre e Professor de pós-graduação
               </p>
@@ -139,10 +139,10 @@ export default function Home() {
                 className="w-48 h-48 object-fill"
               />
               <div className=" absolute top-18 right-6 z-10">
-                <h1 className="font-bold text-[#00003e]  text-[1.2rem]">
+                <h1 className="font-bold text-white text-[1.2rem]">
                   Guedesbampi
                 </h1>
-                <h2 className="text-[#00003e] text-[0.9rem] font-medium ">
+                <h2 className="text-white text-[0.9rem] font-medium ">
                   Publicações
                 </h2>
               </div>
@@ -150,7 +150,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full h-full bg-[url('/banner_2.png')] bg-cover bg-center bg-no-repeat py-10">
+      <section className="w-full h-full bg-[url('/banner_2.png')] bg-cover bg-left-top bg-no-repeat py-10">
         <div className="max-w-[1240px] h-full  flex flex-col  mx-auto  ">
           <h1 className="text-[2rem] text-center ">
             DIFERENCIAIS DA DOCUMENTAÇÃO
@@ -301,8 +301,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
+
       <section className="w-full h-full">
-        <div className="max-w-[1240px] h-full  bg-[url('/banner_1.png')] bg-cover bg-center bg-no-repeat mx-auto py-10 flex gap-3">
+        <div className="w-full h-full  bgCustom mx-auto py-10 flex gap-3">
           <div className="w-[33%]  flex items-center justify-center px-4">
             <h1 className="w-[50%] text-white font-bold text-3xl">
               Documentos disponíveis na plataforma e-commerce
@@ -371,8 +374,8 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full h-full ">
-        <div className="max-w-[1240px] bg-[url('/banner_1.png')] bg-cover bg-center bg-no-repeat h-full  mx-auto py-10 flex flex-col gap-5 ">
-          <div className="w-[80%] mx-auto flex gap-4 items-center bg-blue-700 bg-opacity-30 px-4 py-4">
+        <div className="w-full  bg-[url('/banner_1.png')] bg-cover bg-center bg-no-repeat h-full  mx-auto py-10 flex flex-col gap-5 ">
+          <div className="max-w-[50%]  mx-auto flex gap-4 items-center bg-blue-700 bg-opacity-30 px-4 py-4">
             <div className="w-[33%]">
               <img
                 src="/bio.png"
@@ -396,7 +399,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="w-[80%] mx-auto flex flex-row-reverse gap-4 items-center bg-white bg-opacity-30 px-4 py-4">
+          <div className="max-w-[50%] mx-auto flex flex-row-reverse gap-4 items-center bg-white bg-opacity-30 px-4 py-4">
             <div className="w-[33%]">
               <img
                 src="/den.png"
@@ -420,8 +423,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full-screen bg-gradient-to-r from-cyan-500 to-blue-500 flex flex-col  items-center py-28">
-        <h1 className="text-[2rem] font-bold max-w-[600px] text-white py-10">
+      <section className="w-full-screen  flex flex-col bg-[url('/banner_2.png')] bg-cover bg-center bg-no-repeat   items-center py-28">
+        <h1 className="text-[2rem] font-bold max-w-[600px] text-[#00003e] py-10">
           Garanta sua Tranquilidade: Adquira Documentos de Proteção e Foque no
           seu Crescimento na Harmonização
         </h1>
@@ -431,7 +434,7 @@ export default function Home() {
               href={"https://www.documentosparaharmonizacao.com.br/"}
               target="_blank"
             >
-              <button className="bg-[#00003e] w-[310px] py-5 rounded-full text-[#9ec8e2] flex items-center gap-1 justify-center transition ease-in-out delay-150 hover:bg-blue-800">
+              <button className="bg-[#00003e] w-[310px] py-5 rounded-full text-white flex items-center gap-1 justify-center transition ease-in-out delay-150 hover:bg-blue-800">
                 ACESSE O E-COMMERCE
                 <img src="/cart.svg" className="w-10 h-10 object-fill" />
               </button>
@@ -449,7 +452,7 @@ export default function Home() {
               href={"https://www.documentosparaharmonizacao.com.br/"}
               target="_blank"
             >
-               <button className="bg-[#00003e] w-[310px] py-5 rounded-full text-[#9ec8e2] flex items-center gap-3 justify-center transition ease-in-out delay-150 hover:bg-blue-800">
+               <button className="bg-[#00003e] w-[310px] py-5 rounded-full text-white flex items-center gap-3 justify-center transition ease-in-out delay-150 hover:bg-blue-800">
               CONSULTE PELO WHATSAPP
               <img src="/w.svg" className="w-10 h-10 object-fill" />
             </button>
@@ -457,7 +460,7 @@ export default function Home() {
        </div>
         </div>
       </section>
-      <section className="w-full flex items-center justify-center gap-3 py-4 bg-blue-950">
+      <section className="w-full flex items-center justify-center gap-3 py-4 bgCustom">
         <div className="flex items-center gap-2 text-white">
         <img src="/fb.png" alt="Fb" className="w-10 h-10 object-fill rounded-full"/>
         <p>Facebook</p>
