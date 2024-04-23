@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <main>
       <section className="w-full h-full bg-[url('/banner_1.png')] bg-cover bg-center bg-no-repeat">
-        <div className="max-w-[1240px] min-h-screen flex-col flex  mx-auto  ">
+        <div className="w-[95%] min-h-screen flex-col flex  mx-auto   ">
           <div className="w-full flex items-center">
             <div className="w-44 h-44">
               <img
@@ -79,8 +79,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full min-h-screen bgCustom bg-cover bg-center bg-no-repeat ">
-        <div className="max-w-[1240px]  grid grid-cols-2 gap-4 mx-auto py-4">
+      <section className="w-full min-h-screen flex items-center justify-center bgCustom bg-cover bg-center bg-no-repeat ">
+        <div className="w-[95%]  grid grid-cols-2 gap-4 mx-auto py-4">
           <div className="w-full py-4">
             <div className="flex gap-3 items-center">
               {icons.map((url, index) => (
@@ -92,8 +92,8 @@ export default function Home() {
                 />
               ))}
             </div>
-            <div className="py-10 px-2">
-              <h1 className="text-[1.8rem] font-bold text-white">
+            <div className=" px-2">
+              <h1 className="text-[1.8rem] my-8 font-bold text-white">
                 EQUIPE AUTORA
               </h1>
               <p className="py-8 text-white  text-lg">
@@ -105,7 +105,7 @@ export default function Home() {
                 facial e nas redes sociais.
               </p>
             </div>
-            <div className="mt-40">
+            <div className="mt-10">
               <h1 className="font-bold text-white text-lg">
                 Dra. Deusa Guedes
               </h1>
@@ -155,26 +155,26 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full h-full bg-[url('/banner_2.png')] bg-cover bg-left-top bg-no-repeat py-10">
-        <div className="max-w-[1240px] h-full  flex flex-col  mx-auto  ">
+        <div className="w-[95%] h-full  flex flex-col  mx-auto  ">
           <h1 className="text-[2rem] text-center ">
             DIFERENCIAIS DA DOCUMENTAÇÃO
           </h1>
           <div className="w-full flex gap-2 ">
             <div className="w-[50%] h-full flex items-center justify-center  relative mt-10">
-              <div class="w-64 h-80   rotate-[24deg] py-10 absolute right-16 top-0">
+              <div class="w-full  ">
                 <img
                   src="/doc_1.jpg"
                   loading="lazy"
                   alt="Imagem"
-                  className=" "
+                  className="w-[34%] h-[450px] rotate-[19deg] py-10 absolute right-24 top-0"
                 />
               </div>
-              <div class="w-64 h-80   rotate-[-26deg] py-10 absolute left-32 top-5">
+              <div class="w-full">
                 <img
                   src="/doc_2.jpg"
                   loading="lazy"
                   alt="Imagem"
-                  className="w-full h-80 object-fill "
+                  className="w-[34%] h-[450px] rotate-[-26deg] py-10 absolute left-64 top-3 "
                 />
               </div>
             </div>
@@ -188,7 +188,7 @@ export default function Home() {
                   </span>{" "}
                   das Clinicas de Harmonização!
                 </h2>
-                <p>
+                <p className="text-justify">
                   A responsabilidade civil dos profissionais de saúde em
                   atividades fim é mais abrangente e rigorosa. Na atividade fim
                   ou de resultado, como restou definido pelo Judiciário para
@@ -210,7 +210,7 @@ export default function Home() {
                     principais causas de litigio!
                   </span>{" "}
                 </h2>
-                <p>
+                <p className="text-justify">
                   O TCLE (termo de consentimento livre e esclarecido),
                   infelizmente, além de utilizar erronamente modelos espelhados
                   em termos de profisionais de atividade meio, normalmente são
@@ -229,21 +229,21 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full flex gap-2 ">
-            <div className="w-[50%] h-full flex items-center justify-center  relative mt-10">
-              <div class="w-64 h-80   rotate-[24deg] py-10 absolute right-16 top-0">
+            <div className="w-[50%] h-full flex items-center justify-center  relative mt-14">
+              <div class="w-full ">
                 <img
                   src="/doc_1.jpg"
                   loading="lazy"
                   alt="Imagem"
-                  className=" w-full h-80 object-fill"
+                  className="w-[34%] h-[450px] rotate-[19deg] py-10 absolute right-24 top-0"
                 />
               </div>
-              <div class="w-64 h-80   rotate-[-26deg] py-10 absolute left-32 top-6">
+              <div class="w-full ">
                 <img
                   src="/doc_2.jpg"
                   loading="lazy"
                   alt="Imagem"
-                  className="w-full h-80 object-fill "
+                  className="w-[34%] h-[450px] rotate-[-26deg] py-10 absolute left-64 top-3 "
                 />
               </div>
             </div>
@@ -256,7 +256,7 @@ export default function Home() {
                   </span>{" "}
                   para sua prática clinica livremente !
                 </h2>
-                <p>
+                <p className="text-justify">
                   Você receberá um arquivo editável e personalizavel, devendo
                   apenas incluir sua logomarca e seus dados, além de realizar as
                   alterações que julgar necessária de acordo com sua experiencia
@@ -377,8 +377,8 @@ export default function Home() {
       </section>
       <section className="w-full h-full ">
         <div className="w-full  bg-[url('/banner_1.png')] bg-cover bg-center bg-no-repeat h-full  mx-auto py-10 flex flex-col gap-5 ">
-          <div className="max-w-[50%]  mx-auto flex gap-4 items-center bg-blue-700 bg-opacity-30 px-4 py-4">
-            <div className="w-[33%]">
+          <div className="max-w-[70%] h-96  mx-auto flex gap-4 items-center bg-blue-700 bg-opacity-30 px-4 py-4">
+            <div className="w-[33%] h-full">
               <img
                 src="/bio.png"
                 alt="Perfil"
@@ -401,8 +401,8 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="max-w-[50%] mx-auto flex flex-row-reverse gap-4 items-center bg-white bg-opacity-30 px-4 py-4">
-            <div className="w-[33%]">
+          <div className="max-w-[70%]  h-96 mx-auto flex flex-row-reverse gap-4 items-center bg-white bg-opacity-30 px-4 py-4">
+            <div className="w-[33%] h-full">
               <img
                 src="/den.png"
                 alt="Perfil"
@@ -426,11 +426,11 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full-screen  flex flex-col bg-[url('/banner_2.png')] bg-cover bg-center bg-no-repeat   items-center py-28">
-        <h1 className="text-[2rem] font-bold max-w-[600px] text-[#00003e] py-10">
+        <h1 className="text-[2rem] font-bold max-w-[900px] text-[#00003e] py-10">
           Garanta sua Tranquilidade: Adquira Documentos de Proteção e Foque no
           seu Crescimento na Harmonização
         </h1>
-        <div className="max-w-[1240px] h-full mx-auto grid grid-cols-3">
+        <div className="w-[90%] h-full mx-auto grid grid-cols-3">
           <div className="flex items-center justify-center">
             <Link
               href={"https://www.documentosparaharmonizacao.com.br/"}
@@ -438,7 +438,7 @@ export default function Home() {
             >
               <button className="bg-[#00003e] w-[310px] py-5 rounded-full text-white flex items-center gap-1 justify-center transition ease-in-out delay-150 hover:bg-blue-800">
                 ACESSE O E-COMMERCE
-                <img src="/cart.svg" className="w-10 h-10 object-fill" />
+                <img src="/cart.svg" className="w-10 h-10 object-cover" />
               </button>
             </Link>
           </div>
